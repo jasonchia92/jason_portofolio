@@ -36,8 +36,8 @@
 		$header_featured.flexslider( slider_settings );
 	}*/
 	$header_featured.flexslider({
-		slideshow: true, 			// set true for autoplay
-		slideshowSpeed: 5000,		//uncommented for autoplay
+		slideshow: false, 			// set true for autoplay
+		//slideshowSpeed: 5000,		//uncommented for autoplay
 	});
 	$("#header_featured").find('#left-arrow').click( function(){
 			$('#header_featured .flex-direction-nav').find('a.prev').trigger('click');
