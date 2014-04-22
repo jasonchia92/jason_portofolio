@@ -1,0 +1,474 @@
+<!DOCTYPE html>																																			
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="author" content="JasonChia">
+	<meta name="description" content="JasonChia's Portofolio">
+	<title>JasonChia's Portofolio</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/headerWithSlider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/lightbox.html" type="text/css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen" />
+    <link href="css/least.min.css" rel="stylesheet">
+    <link href="css/jquery.easy-pie-chart.css" rel="stylesheet">   
+	
+	<link href='http://fonts.googleapis.com/css?family=Muli:300,400' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	
+	 <style>
+		  html, body{ margin: 0; padding: 0; height: 100%; }
+	</style>
+	
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/jQuery.appear.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/easypiechart.js"></script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+	<script type="text/javascript" src="js/niceScroll.js"></script>
+	<script src="js/jquery.lazyload.js"></script>
+    <script src="js/least.min.js"></script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+</head>
+<body class="home">
+	<div id="container">
+		<div id="wrapper">
+			<header id="main_header">
+				<!--MENU-->
+				<div id="menu" class="clearfix">
+					<a href="#" id="mobile_nav" class="closed">Navigation Menu</a>
+					<nav id="main-menu">
+						
+						<ul id="nav home-top-menu" class="nav">
+							<div class="btn-group">
+							<li><a href="#main_header">Home</a></li>
+							<li><a href="#services">Cookies</a></li>
+							<li><a href="#about">About Me</a></li>
+							<li><a href="#team">Professional</a></li>
+							<li><a href="#recent-work">Recent Work</a></li>
+							<li><a href="#fr_contact">Contact</a></li>
+						</div>
+						</ul>	
+						
+					</nav>
+				</div> <!-- end #menu -->
+				<!--MENU-->
+				
+				<!--SLIDER-->
+				<div id="header_featured" class="flexslider clearfix">
+					<ul class="slides">
+					
+					<!--IMAGE SLIDE-->				
+					<li class="slide fr_slide_image">
+							<div class="slide_wrap">
+								<div class="featured_box">
+									<a href="#">							
+										<img src="images/slider/header_4.jpg" alt='img' />
+									</a>
+									<div class="fr_image_description">
+										<div class="fr_inner_description">
+											<h2 class="title" ><span>Design + Coding<span></h2>
+											<p>Design is not like what it looks like or feels like,Design is how it works.
+											<br>
+											-Apple Founder,Steve Jobs
+										</div> <!-- end .fr_inner_description -->
+									</div>
+								</div> <!-- end .featured_box -->
+							</div> <!-- end .slide_wrap -->
+						</li>	
+
+					
+						<li class="slide fr_slide_image">
+							<div class="slide_wrap">
+								<div class="featured_box">
+									<a href="#">							
+										<img src="images/slider/header_3.jpg" alt='img' />
+									</a>
+									<div class="fr_image_description">
+										<div class="fr_inner_description">
+											<h2 class="title" ><span>Design<span></h2>
+											<p>Is to create things, things that ding the world.</p>
+										</div> <!-- end .fr_inner_description -->
+									</div>
+								</div> <!-- end .featured_box -->
+							</div> <!-- end .slide_wrap -->
+						</li>
+						
+						<li class="slide fr_slide_image">
+							<div class="slide_wrap">
+								<div class="featured_box">
+									<a href="#">							
+										<img src="images/slider/header_2.jpg" alt='img' />
+									</a>
+									<div class="fr_image_description">
+										<div class="fr_inner_description">
+											<h2 class="title" ><span>Coding<span></h2>
+											<p>Simply, to made the design comes true, to link dreams and reality.</p>
+										</div> <!-- end .fr_inner_description -->
+									</div>
+								</div> <!-- end .featured_box -->
+							</div> <!-- end .slide_wrap -->
+						</li>	
+
+										
+						
+					</ul>
+
+					<a id="left-arrow" class="flex-prev" href="#">Previous</a>
+					<a id="right-arrow" href="#">Next</a>
+				</div>	<!-- end #header_featured -->
+				<!--SLIDER-->
+			
+			</header> <!-- end #main-header -->
+		<div id="content">
+		
+		<!--SERVICES SECTION-->
+		<div id="services" class="clearfix">
+			<div class="sizers clearfix">
+				<div class="servise_items clearfix">
+					<h3 class="section_name">What I do </h3>
+					<div class="service first">
+						<img class="icon aligncenter" src="images/service_img/coding.png" alt="page icon">
+						<h3>Coding</h3>
+						<p>As a student from departure of science and technology, YES I do coding just like my classmate.</p>
+					</div> <!-- end .service -->
+					<div class="service">
+						<img class="icon aligncenter" src="images/service_img/design.png" alt="page icon">
+						<h3>Design</h3>
+						<p>But the different of me and my classmate is, I designed UX and UI.YES, I'm a Programmer with DESIGN ability. </p>
+					</div> <!-- end .service -->
+					<div class="service last">
+						<img class="icon aligncenter" src="images/service_img/googliness.png" alt="page icon">
+						<h3>Googliness</h3>
+						<p>The spirit of GOOGLINESS, that means "Connecting people to information", I connect people with technology with speech and design.</p>
+					</div> <!-- end .service -->
+					<div class="service first">
+						<img class="icon aligncenter" src="images/service_img/idea.png" alt="page icon">
+						<h3>Idea</h3>
+						<p>The idea of bringing techonology to life is everywhere, I used the power of tech to solve every question inside my life, I create APPS that change the way mans live.</p>
+					</div> <!-- end .service -->
+					<div class="service">
+						<img class="icon aligncenter" src="images/service_img/management.png" alt="page icon">
+						<h3>Management</h3>
+						<p>I managed my team, comfirming them keeps their eyes on goals, so WE CAN CHANGE THE WORLD BY OURSELVES ;) </p>
+					</div> <!-- end .service -->
+					<div class="service last">
+						<img class="icon aligncenter" src="images/service_img/coffee.png" alt="page icon">
+						<h3>I love <i class="fa fa-heart fa-lg"></i> Coffees</h3>
+						<p>Yup just like the others, I love, no I addicted on COFFEES.</p>
+					</div> <!-- end .service -->
+				</div> <!-- end .servise_items -->
+			</div> <!-- end of .sizers -->
+		</div> <!-- end #services -->
+		<!--SERVICES SECTION-->
+				
+		<!-- ABOUT US -->
+		<div id="about" >
+			<div class="sizers clearfix">
+				<div class="one_half clearfix">
+						<div class="selfie">
+						<img src="images/selfie.jpg">
+						</div>
+
+
+					<section class="social">
+						<h4>Follow me</h4>
+						<div id="social-icons">
+							<a href="http://www.facebook.com/jasonchia91" target="_blank" title="My facebook" >	<img src="images/service_img/facebook.png" style="width:80px;height:80px;"></a>
+							<a href="http://www.instagram.com/jasonchia92" target="_blank" title="My Instagram" ><img src="images/service_img/instagram.png" style="width:80px;height:80px;"></a>
+							<a href="http://plus.google.com/u/0/105944206679622024568/posts" target="_blank" title="My Google plus" >	<img src="images/service_img/google.png" style="width:80px;height:80px;"></a>
+						</div> <!-- end #social-icons -->
+					</section>
+					
+
+				</div> <!-- end of .one_half -->
+				
+				<section class="bio one_half last">
+					<h4>About Me</h4>
+					<p>A pineapple cake, twenty three dollar.<br>
+						A POLO shirt, one hundred forty nine dollar.<br>
+						A pedicle screws, one thousand dollar above.</p>
+
+					<p>A Information Engineering student just graduated from university, dreaming of to change the world by engineering, by using self's professional to link people with technology,<br> PRICELESS.</p>
+
+					<p>These, is a gift that comes from Taiwan, a gift to the world.<br>
+						<a href="single.html" style="position:relative; color:rgba(246, 147, 104, 0.8);float:right;right:20px;">See More</a>
+						
+					</p>
+				</section>				
+			</div> <!-- end of .sizers -->
+		</div> <!-- end of #about -->
+		<!-- ABOUT US -->
+		
+		<!-- TEAM -->
+		<div id="team">
+			<div class="sizers clearfix">
+				<div class="section_description">
+					<h3 class="section_name">Professionals</h3>
+					<p>In 4 years of Department Computer Science, What I had mastered: <br>HTML,CSS,Android,Java,UI/UX Design,MySQL...</p>
+				</div>
+					<div class="team_person">
+						<img src="images/service_img/1.png" alt="img" />
+						<h6 class="team_name">HTML</h6>
+						<p>Web development HTML5 with CSS</p>
+					</div>
+					<div class="team_person">
+						<img src="images/service_img/2.png" alt="img" />
+						<h6 class="team_name">Android</h6>
+						<p>Android development</p>
+					</div>
+					<div class="team_person">
+						<img src="images/service_img/4.png" alt="img" />
+						<h6 class="team_name">Java</h6>
+						<p>Java system development</p>
+					</div>
+					<div class="team_person">
+						<img src="images/service_img/3.png" alt="img" />
+						<h6 class="team_name">User Interface</h6>
+						<p>User Interface/Experience design </p>
+					</div>
+			</div> <!-- end of .sizers -->
+		</div>
+		<!-- TEAM -->
+		
+		<!-- QUOTE -->
+		<div class="fixed_block quote">
+			<blockquote>“The people who are crazy enough to think they can change the world, <br>
+				Are the ones who do.”</blockquote>
+			<p class="author">Steve Jobs</p>
+		</div>
+		<!-- QUOTE -->
+
+		<!--RECENT WORK SECTION-->
+		<section id="recent-work">
+			<h3 class="section_name">Projects</h3>
+            <ul id="gallery">
+			
+				<li id="fullPreview" class="clearfix" style="display: none;">
+					<img src="img/full/10.html" alt="portfolio_img" >
+					<div class="fullCaption">
+                     <strong>Day, Month, Year:</strong> sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                    </div><figure class="close"></figure>
+				</li><!-- end of #fullPreview -->
+				
+				<li>
+                    <a href="images/portfolio_large/elibrary.jpg"></a>
+                    <img data-original="images/portfolio/elibrary.png" src="images/portfolio/elibrary.png" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <div class="overLayer"></div>
+                    <div class="infoLayer">
+                        <ul>
+                            <li>
+                                <h2>
+                                    E-Library
+                                </h2>
+                            </li>
+                            <li>
+                                <p>
+                                    View Project
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="projectInfo">
+                    	 <iframe width="448" height="252" src="//www.youtube.com/embed/vx2-Bgt9THk" frameborder="0" allowfullscreen></iframe>
+                        <strong>E-Library : </strong><br> A online library query system developed with IBM worklight, supported all platform: web, Windows Phone, iOS, Android and etc.<br>
+                        The app intents to help people like student to use their nearby library resources with more efficiency. With our app, scan book's ISBN by using camera on smartphones, or input by keyboard, so system will review the book's stat through internet by using FINDBOOK's API, and the whole process will just take around 20second to complete.<br>
+                        Next, four function was being provide:<br>
+                        1. User can made a books collection check of nearby library by selecting target library from service list.<br>
+                        2. User can reserve the book if available on targeted library, or book also can be recommend to target library if the book don't available.<br>
+                        3. User can check the price of the book through internet, try to find out where is this book has more affordable price.<br>
+                        4. With member system, user can manage their own books borrow list, date to return books, and etc.<br>
+
+                         <br>Please refer to the video for more information.
+                         <br>
+                         <br>System merged with SHU-TE University's Library, service online on 2013.
+                         <br>
+                         <br>Award:
+                         <br> 2013 IBM Mobile First International ICT Innovative Service Contest, Silver.
+                         <br> 2011 CSIE STU Application Service Contest, Silver.
+                    </p>     
+                </li><!-- end li -->
+				
+				<li>
+                    <a href="images/portfolio_large/treasure.jpg"></a>
+                    <img data-original="images/portfolio/treasure.png" src="images/portfolio/treasure.png" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <div class="overLayer"></div>
+                    <div class="infoLayer">
+                        <ul>
+                            <li>
+                                <h2>
+                                    Treasure     
+                                </h2>
+                            </li>
+                            <li>
+                                <p>
+                                    View Project
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="projectInfo">
+                    	<iframe width="448" height="252" src="//www.youtube.com/embed/3uKN9MsaekM" frameborder="0" allowfullscreen></iframe>
+                        <strong>Treasure : </strong>
+                        <br> Treasure system, a navigation system positioning all the offices in school.After logging in with student ID and password, task has been given inside the app, user's mission is according to the question that given, answering by scanning QR-code infront of every office in school. In every correct answer, will provide the target office's official website, photos, videos, and service detail.<br>
+                        <br>Please refer to the video for more information.
+                    </p>
+                </li><!-- end li -->
+				
+				<li>
+                    <a style="width : 95%;" href="images/portfolio_large/ce.jpg" ></a>
+                     
+                    <img data-original="images/portfolio/ce.png" src="images/portfolio/ce.png" alt="aticle-image" width="240" height="150" style="display: inline">
+
+                    <div class="overLayer"></div>
+                    <div class="infoLayer">
+                        <ul>
+                            <li>
+                                <h2>
+                                    CE 
+                                </h2>
+                            </li>
+                            <li>
+                                <p>
+                                    View Project
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="projectInfo">
+                    	
+                        <strong>Construction Engineering : </strong>
+                        <br>A B2C system with local industry participate, supported by Web client and Android, purposely connect house decoration company to their customer, and both project designer and project manager.
+                        We provide a platform for customer keeping in touch with decoration company for futher discussion about their project and update immediately with every single person in charge in this project.<br>
+                        1. Displaying project list with status : Constructing, Ready, Designing and etc.<br>
+                        2. Provide project's detail, example : Project name, address, client name, manager name and etc. <br>
+                        3. With messaging system, client or co-worker can discuss, exchange ideas and update information inside each project.<br>
+                        4. With photo upload system, supervisor immediately upload photo in construction site, live update site's status with both customers and company for each project to discuss and comfirming futher works.<br>
+                        5. Navigation system provide with each supervisors use, easy for company track down location and make sure they are supervising the construction site.<br>
+
+                        <br>
+                        Please refer to <strong><a style="position: static;display: initial;" href="https://www.icloud.com/iw/#keynote/BAKq5mP_vbmi8w0DAI6Bc8MCkyQKOjm3OZCE/Untitled_2" target="_blank">this</a></strong> keynote for more detail : 
+
+                        <br>Award :
+                        <br> 2013 CSIE STU Application Service Contest, Gold.
+                    </p>
+                </li><!-- end li -->
+				
+				<li>
+                    <a href="images/portfolio_large/journal.jpg"></a>
+                    <img data-original="images/portfolio/journal.png" src="images/portfolio/journal.png" alt="aticle-image" width="240" height="150" style="display: inline">
+                    <div class="overLayer"></div>
+                    <div class="infoLayer">
+                        <ul>
+                            <li>
+                                <h2>
+                                    Journal STU   
+                                </h2>
+                            </li>
+                            <li>
+                                <p>
+                                    View project
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="projectInfo">
+                        <strong>Journal system of SHU-TE University : </strong>
+                        <br> A journal system of paper for master student in SHU-TE University. With this system, professor can easily manage their student's paper from any web browser provided.
+                        Student can upload their paper into this system for easy management, and share with others.Student also can comfirm their paper schedule with this system.
+                        <br>PS : Only for STU's student, service online on 2013.
+                    </p>
+                </li><!-- end li -->
+				
+				
+			</ul>
+		</section>
+		<!--RECENT WORK SECTION-->
+		
+		<!-- CONTACT US -->
+		<div id="fr_contact" class="clearfix">
+			<div class="sizers clearfix">
+				<div class="fr_phone">
+					<i class="fa fa-phone-square fa-3x"></i>
+					<p>+886 9 8430 2125</p>
+				</div>
+				<div class="fr_mail">
+					<i class="fa fa-envelope-o fa-2x"></i>
+					<p>jasonchia92@gmail.com</p>
+				</div>
+				<div class="fr_addres">
+					<i class="fa fa-map-marker fa-2x"></i>
+					<p>82445,No.59, Hengshan Rd., Yanchao Dist., Kaohsiung City 824, Taiwan (R.O.C.)</p>
+				</div>
+			</div> <!-- end of .sizers -->
+		</div> <!-- end #fr_contact -->
+			
+		<div id="fr_contact_form">
+			<div class="sizers clearfix">
+				<div class="section_description">
+					<h3 class="section_name">Contact Me</h3><!--NAME OF SECTION-->
+					<p>Want to say hello? Want to know more about Me? I check my mail all the time, so I should be in touch soon</p>
+				</div> <!-- end of .section_description -->
+				<form id="ajax_contact_form" action="javascript:alert('Was send!');">
+					<div class="one_half">
+						<p class="contact_page name"><input type="text" name="name" class="required" value="Name" /></p>
+						<p class="contact_page email"><input type="text" name="email" class="last-item required" value="Email" /></p>
+						<p class="subject"><input id="subject" type="text" name="subject" class="last-item required" value="Subject" /> </p>  
+					</div>
+					<div class="one_half last">
+						<textarea class="input" id="contact_message" name="message">Message</textarea>
+					</div>
+					<p class="clearfix"><input type="reset" id="contact_reset" value="Reset" />
+					<input id="contact_submit" class="contact_submit submit" type="submit" value="Send"/></p>
+				</form>
+			</div> <!-- end of .sizers -->
+		</div>
+			
+		<div id="contact" class="responsive clearfix">
+			<div class="sizers clearfix">
+			</div>
+			<div id="map-canvas"></div> <!-- MAP -->
+		</div>
+		<!-- CONTACT US -->
+		
+		<!--FOOTER-->
+		<div id="footer">
+			</div>
+			<p id="copyright">Designed by <span>Jason Chia &#169; 2014</span></p>
+		</div> <!-- end #footer -->
+		<!--FOOTER-->
+	
+		</div> <!-- end #content -->
+	</div> <!-- end #wrapper -->
+</div> <!-- end #container -->
+
+<!--CUSTOM JS-->
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/headerWithSlider.js"></script>
+<script>
+	$(document).ready(function(){
+		$('#gallery').least({
+			random: 0,
+		});
+	});
+	
+	$(function() {
+    $('.chart').easyPieChart({
+		barColor: 'rgba(255,255,255,0.8)',
+		trackColor: 'rgba(0,0,0,0.5)',
+        scaleColor: false,
+		lineWidth: 5,
+		size: 80
+    });
+});
+    </script>
+</body>
+</html>
