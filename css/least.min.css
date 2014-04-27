@@ -1,16 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Arvo);
-/**
-*** least.
-*** Author: Kamil Czujowski, Sergej Müller
-*** Version: 1.3
-*** Made with ♥ - Copyright (c) 2013 Hamburg, Germany - All rights reserved.
-*** https://twitter.com/kamilczujowski, http://wpcoder.de
-**/
-/* @group Mixins */
-/* @end */
-/* @group Colors */
-/* @end */
-/* @group Default */
+
 * {
   border: 0;
   margin: 0;

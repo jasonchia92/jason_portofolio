@@ -1,10 +1,3 @@
-/*------------------------------------------------*/
-/*-----------------[RESET]------------------------*/
-/*------------------------------------------------*/
-
-/* http://meyerweb.com/eric/tools/css/reset/ */
-/* v1.0 | 20080212 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -48,7 +41,7 @@ article, aside, footer, header, hgroup, nav, section { display: block; }
          url('fonts/Helvetica/HelveticaNeueLTPro-UltLt.woff') format('woff'),
          url('fonts/Helvetica/HelveticaNeueLTPro-UltLt.ttf') format('truetype'),
          url('fonts/Helvetica/HelveticaNeueLTPro-UltLt.svg#') format('svg');
-    font-weight: lighter;
+    font-weight: normal;
     font-style: normal;
 
 }
@@ -75,7 +68,6 @@ body {
 	font-size: 12px;
 	color: #444;
 	background-color: #fff;
-	text-rendering: optimizelegibility;
 }
 p{ font-family:  "Muli", Arial, sans-serif; }
 a, #reply-title a {
@@ -170,8 +162,6 @@ img#about-image {
 	clear: both;
 	height: 0;
 }
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 /*****************************************/
 /************ MAIN LAYOUT INFO ***********/
@@ -492,7 +482,7 @@ h3.section_name:after{
 	letter-spacing: 0.1px;
 }
 
-.servise_items ::selection {color:#fff;background:rgba(246, 147, 104, 0.8);}
+
 
 .service img.icon{
 	margin: 0 auto 40px;
@@ -634,18 +624,14 @@ h6.fucts_name{
 .recent_work_item img{
 	max-width: 100%;
 }
-.recent_work_item img{
-   /* filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); */
-    filter: gray; 
+.recent_work_item img{ 
     -webkit-filter: grayscale(100%); 
     -webkit-transition: all .6s ease; 
     -webkit-backface-visibility: hidden; 
 }
 
 .recent_work_item img:hover {
-    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
     -webkit-filter: grayscale(0%);
-	filter: none;
 }
 .item_description{
 	position: absolute;
@@ -662,7 +648,6 @@ h6.fucts_name{
 	background-color: rgba(0, 0, 0, 0.5);
 	background-image: none;
 	background-position: 50% 50%;
-	filter:alpha(opacity=40);
 	height: 100%;
 	left: 0;
 	top: 0;
@@ -758,7 +743,6 @@ h6.fucts_name{
 
 .fr_cols{
      overflow:hidden;
-     _zoom:1;/*Для 6-го IE, задаем hasLayout, на эту тему есть много постов на хабре*/
 }
 .fr_cols .fr_col1, .fr_cols .fr_col2{
      padding-bottom:10000px;
@@ -1089,7 +1073,6 @@ h4.widget_title:after {
 	margin: 2px !important;
 	border: none !important;
 	color: #555;
-	background-color: none;
 	font-style: normal;
 	font-size: 13px;
 	margin-right: 10px !important;
@@ -1174,8 +1157,8 @@ h4.widget_title:after {
 #about .bio h4{ font-size: 50px; }
 #about h4{
 	font-size: 20px;
-	display: inline-block;
 }
+
 #about h3, #about h4{ margin-bottom: 20px; }
 #about strong{ color: #fff; }
 #about img{
@@ -1228,7 +1211,6 @@ h4.widget_title:after {
 #social-icons a {
 	padding-left: 14px;
 	opacity: 0.9;
-	filter:alpha(opacity=90);
 }
 #social-icons a  img{
 	width: 30px;
@@ -1354,16 +1336,14 @@ html[xmlns] .slides {display: block;}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider {position: relative; zoom: 1;}
-.flexslider .slides {zoom: 1;}
+.flexslider {position: relative; }
 .flexslider .slides > li {position: relative;}
 /* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
-.flex-container {zoom: 1; position: relative;}
+.flex-container { position: relative;}
 
 /* Caption style */
 /* IE rgba() hack */
-.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption {background:none;}
 .flex-caption {width: 96%; padding: 2%; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,.3); color: #fff; text-shadow: 0 -1px 0 rgba(0,0,0,.3); font-size: 14px; line-height: 18px;}
 
 .flex-control-nav, .flex-direction-nav, #controllers-wrapper { display: none; }
@@ -1400,6 +1380,10 @@ ol.flex-control-nav a.active, .featured_box ol.flex-control-nav li a.active{
 /*****************************************/
 /***************** FOOTER ****************/
 /*****************************************/
+
+.w3c {
+	text-align: center;
+}
 
 #footer {
 	color: #555;
@@ -1449,7 +1433,6 @@ p#copyright a { color:#888; }
 	border-radius: 3px;
 	text-align: center;
 	line-height: 5.5;
-	transition: all 0.3 ease;
 	z-index: 1;
 }	
 #fr_to_top:hover{
@@ -1696,6 +1679,7 @@ textarea.input {
 	.masonry .entry{ width: 310px; }
 	
 }
+
 @media only screen and ( max-width: 768px ) {
 	
 	#main_header{
@@ -1721,7 +1705,7 @@ textarea.input {
 		position: relative;
 		border-width: 0 1px;
 	}
-	.small_header #mobile_nav { color: #fff; !important; }
+	.small_header #mobile_nav { color: #fff;}
 	.small_header #mobile_nav.opened{ color: #444; }
 	#mobile_nav:hover { text-decoration: none; }
 	#logo {
@@ -1761,10 +1745,9 @@ textarea.input {
 	#fr_contact_form textarea.input{ width: 310px; } 
 	
 	#left_area { width: 440px; }
-	#sidebar { width: 190px; }
-	
-	
+	#sidebar { width: 190px;}
 }
+
 @media only screen and ( max-width: 637px ) {
 	.sizers { width: 570px; }
 	
@@ -1785,7 +1768,7 @@ textarea.input {
 		margin-bottom: 30px;
 	}
 	
-	#about{ padding: padding: 70px 30px 120px; }
+	#about{ padding: 70px 30px 120px; }
 	#about_wrap section{
 		float: none;
 		margin: 0 0 30px;
